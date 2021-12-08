@@ -13,6 +13,13 @@ With APIP its possible to do corelation and OSINT on IPs in fast and precisous w
 
 
 
+## Demo
+
+
+Script working 
+
+
+![Usage](https://i.ibb.co/mqVKNgL/Animation.gif)
 
 ## Tech Stack
 
@@ -75,10 +82,3 @@ And then you are ready to go :)
  | `IPDB` | Provide reports on IPs  |
 
 
-## Demo
-
-
-Script working 
-
-
-![Usage](https://i.ibb.co/mqVKNgL/Animation.gif)
