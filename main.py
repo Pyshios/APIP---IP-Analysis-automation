@@ -42,6 +42,7 @@ try:
     os.remove("ipdb_reports.json")
     os.remove("otxone.json")
     os.remove("vt.json")
+    os.remove("pulsedv.csv")
 
 except:
     pass
@@ -357,20 +358,21 @@ with open("ipdb.json", "r") as read_file:  # Open our jason file
 
 
 
+try:
+
+    def get_pul_dive(key , ip):
+        pud = pulsedive.Pulsedive(key)
+        ind = pud.indicator(value= ip)
+        pd10 = pd.DataFrame.from_dict(dict(ind), orient='Index')
+        pd10.to_csv("pulsedv.csv")
+
+    key_pul = str(row[4].strip("\n"))
+
+    get_pul_dive(key_pul ,str(ip_r))
 
 
-def get_pul_dive(key , ip):
-    pud = pulsedive.Pulsedive(key)
-    ind = pud.indicator(value= ip)
-    pd10 = pd.DataFrame.from_dict(dict(ind), orient='Index')
-    pd10.to_csv("pulsedv.csv")
-
-key_pul = str(row[4].strip("\n"))
-
-get_pul_dive(key_pul ,str(ip_r))
-
-
-
+except:
+    pass
 
 
 

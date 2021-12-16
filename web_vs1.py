@@ -135,13 +135,16 @@ if page == "Virus Total and IP Quality Score":
 
 if page == "OTX Pulses and PulseDive":
 
+    try:
+        st.subheader("PulseDive Response")
+        image5 = Image.open('pulsedive.png')
+        st.image(image5 ,200 , 200)
+        pd11 = pd.read_csv("pulsedv.csv")
 
-    st.subheader("PulseDive Response")
-    image5 = Image.open('pulsedive.png')
-    st.image(image5 ,200 , 200)
-    pd11 = pd.read_csv("pulsedv.csv")
+        st.write(pd11)
 
-    st.write(pd11)
+    except:
+        pass
 
     st.subheader("OTX Pulses")
     image6 = Image.open('otx.png')
