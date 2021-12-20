@@ -57,7 +57,7 @@ Installation its simple
     
 
     
-## Screenshots
+## API Section
 
 ![App Screenshot](https://i.ibb.co/Jc6rH7S/Capture.png)
 
